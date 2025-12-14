@@ -1,2 +1,2 @@
-# tipscoin
-TIPS COIN 
+# tipsboxcoin
+TIPSbox COIN 
