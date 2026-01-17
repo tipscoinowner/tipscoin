@@ -12,8 +12,7 @@ Bu doküman, bu üç yapıyı tek bir kurumsal zincir olarak birleştirir ve TIP
 ---
 
 # 2. TIPSPAY Enterprise Architecture Diagram
-TIPSPAY ENTERPRISE CHAIN │ ├── 1. Governance & Security Layer │     ├── Hard‑Locked Admin Address │     ├── Hard‑Locked Treasury Address │     ├── Multi‑Sig Governance (Critical Ops) │     ├── Freeze / Blacklist / Seize Modules │     ├── Pausable Contract │     ├── On‑Chain Audit‑Log Events │     └── Operational Security Policies │ ├── 2. Compliance & Audit Layer │     ├── Incident Response Runbook │     ├── Regulator‑Ready Incident Report Templates (PDF/JSON) │     ├── Tronscan Verification Checklist │     ├── Scammer Tag & Risk Indicator Framework │     ├── Balance Delta Verification Flow │     ├── Event Correlation & Timeline Reconstruction │     └── Off‑Chain Ledger + Audit‑Log Integration │ └── 3. Operational Demo & Training Layer ├── Modular UI Shell (Trainer‑Friendly) ├── Dynamic JSON/TS Adapters ├── Compliance Demo Flows (Freeze/Seize/Pause/Blacklist) ├── Incident Simulation Scripts ├── Repo Structure (contracts/scripts/app/compliance/docs) └── Training & Onboarding Playbooks
----
+
 
 ---
 
