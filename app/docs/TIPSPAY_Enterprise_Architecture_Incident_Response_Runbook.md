@@ -1,8 +1,8 @@
-TIPSPAY Enterprise Architecture & Incident Response Runbook
-Kurumsal Zincir Mimarisi • Governance • Compliance • IR • Demo & Eğitim
+### TIPSPAY Enterprise Architecture & Incident Response Runbook
+## Kurumsal Zincir Mimarisi • Governance • Compliance • IR • Demo & Eğitim
 
 
-1. Overview
+# 1. Overview
 TIPSPAY, kurumsal-grade bir TRON/TRC20 stablecoin ekosistemi olarak üç ana omurga üzerine inşa edilmiştir:
 - Governance & Security Layer
 - Compliance & Audit Layer
@@ -12,7 +12,7 @@ escalation chain formatında tanımlar.
 
 ---
 
-2. TIPSPAY Enterprise Architecture Diagram
+# 2. TIPSPAY Enterprise Architecture Diagram
 Aşağıdaki diyagram, TIPSPAY’in tüm kurumsal yapısını tek bir zincir halinde gösterir:
 
 TIPSPAY ENTERPRISE CHAIN
@@ -44,7 +44,7 @@ TIPSPAY ENTERPRISE CHAIN
       └── Training & Onboarding Playbooks
 ---
 
-3. Incident Response Runbook (Tier‑0 → Tier‑3)
+# 3. Incident Response Runbook (Tier‑0 → Tier‑3)
 TIPSPAY IR süreci dört seviyeli bir escalation zinciri olarak tasarlanmıştır.
 Her seviye bir öncekinin çıktısını alır ve kurumsal olarak daha üst bir seviyeye taşır.
 
@@ -108,14 +108,14 @@ Görevler:
 
 ---
 
-4. IR Escalation Chain (Summary)
+# 4. IR Escalation Chain (Summary)
 Tier‑0 → Tier‑1 → Tier‑2 → Tier‑3
 Auto Detection → Analyst → Compliance → Executive/Regulator
 Bu zincir TIPSPAY’i kurumsal-grade bir stablecoin operatörü seviyesine taşır.
 
 ---
 
-5. UI Integration for Incident Response
+# 5. UI Integration for Incident Response
 IR ekranı, TIPSPAY demo UI içinde bağımsız bir modül olarak çalışır.
 /app
   /components
@@ -141,7 +141,7 @@ IR Action Panel:
 
 ---
 
-6. Versioning
+# 6. Versioning
 • 	v1.0 — Initial enterprise architecture + IR runbook
 • 	v1.1 — Full unified Markdown version
 • 	v1.2 — UI IR module integration
