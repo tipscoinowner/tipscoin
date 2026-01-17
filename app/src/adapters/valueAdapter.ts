@@ -1,1 +1,3 @@
-
+export async function fetchTIPSCValueModel(provider: ethers.Provider) {
+  ...
+}
