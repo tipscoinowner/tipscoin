@@ -80,4 +80,4 @@ Aşağıdaki bölümde ekran tasarımı ve JSON/TS adapter yapısı açıklanır
 
 ---
 
-
+by MURAT GÜNEL 
