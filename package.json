@@ -1,12 +1,14 @@
 {
-  "name": "tipsc-chain",
+  "name": "tipscoin",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "cd app && npm run dev",
     "build": "cd app && npm run build",
     "start": "cd app && npm start",
-    "hardhat": "hardhat"
+    "hardhat": "hardhat",
+    "deploy": "npx hardhat run scripts/deploy.ts --network localhost",
+    "populate": "npx hardhat run scripts/demoPopulate.ts --network localhost"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
