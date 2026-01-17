@@ -1,14 +1,21 @@
-<ValueBanner targetUnitValue={data.targetUnitValue} />
+import ValueBanner from "@/components/ValueBanner";
+import HealthStatus from "@/components/HealthStatus";
 
-<HealthStatus
-  reserveRatio={data.reserveRatio}
-  isHealthy={data.isHealthy}
-/>
+export default function HomePage() {
+  const data = {
+    targetUnitValue: 1.0,
+    reserveRatio: 0.92,
+    isHealthy: true,
+  };
 
-<ReserveInfoModal
-  open={modalOpen}
-  onClose={() => setModalOpen(false)}
-  targetUnitValue={data.targetUnitValue}
-  reserveRatio={data.reserveRatio}
-  minReserveRatio={100}
-/>
+  return (
+    <>
+      <ValueBanner targetUnitValue={data.targetUnitValue} />
+
+      <HealthStatus
+        reserveRatio={data.reserveRatio}
+        isHealthy={data.isHealthy}
+      />
+    </>
+  );
+}
