@@ -1,26 +1,34 @@
 import React from "react";
 
-type Props = {
-  reserveRatio: number; // percentage
+type HealthStatusProps = {
+  reserveRatio: number;
   isHealthy: boolean;
 };
 
-export const HealthStatus: React.FC<Props> = ({ reserveRatio, isHealthy }) => {
-  const color = isHealthy ? "green" : "red";
-  const label = isHealthy ? "Healthy" : "Below Minimum";
+export default function HealthStatus({
+  reserveRatio,
+  isHealthy,
+}: HealthStatusProps) {
+  const statusColor = isHealthy ? "#16c784" : "#ea3943";
+  const statusText = isHealthy ? "Healthy" : "Unhealthy";
 
   return (
     <div
       style={{
-        padding: "14px",
-        border: "1px solid #ddd",
-        borderRadius: 8,
-        background: "#fff",
-        marginTop: 10,
+        padding: "16px",
+        borderRadius: "12px",
+        background: "#111",
+        color: "#fff",
+        border: `1px solid ${statusColor}`,
       }}
     >
-      <strong>Reserve Ratio:</strong> {reserveRatio.toFixed(2)}% —{" "}
-      <span style={{ color, fontWeight: 600 }}>{label}</span>
+      <div style={{ fontSize: "18px", fontWeight: 600, marginBottom: "8px" }}>
+        Reserve Ratio: {(reserveRatio * 100).toFixed(2)}%
+      </div>
+
+      <div style={{ fontSize: "16px", color: statusColor }}>
+        Status: {statusText}
+      </div>
     </div>
   );
-};
+}
